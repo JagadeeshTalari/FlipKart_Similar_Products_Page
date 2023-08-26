@@ -1,0 +1,715 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Bootstrap CSS Link -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+    <!-- FontAwesome Link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- 1. Navbar -->
+    <nav class="navbar navbar-expand-lg bg-primary">
+      <div class="container-sm d-flex">
+        <div class="d-flex" style="position: relative">
+          <a class="navbar-brand" href="./index.html">
+            <img
+              width="70px"
+              src="https://static-assets-web.flixcart.com/fk-p-linchpin-web/fk-cp-zion/img/flipkart-plus_8d85f4.png"
+              alt=""
+            />
+          </a>
+          <form class="d-flex" role="search">
+            <input
+              class="form-control me-5 rounded-0"
+              type="search"
+              placeholder="Search for products, and brands"
+              aria-label="Search"
+              style="width: 30rem"
+            />
+            <i
+              class="fa-solid fa-magnifying-glass"
+              style="color: blue; position: absolute; right: 160px; top: 12px"
+            ></i>
+            <button
+              class="btn btn-light text-primary px-4 py-1 rounded-0"
+              type="submit"
+            >
+              Login
+            </button>
+          </form>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul
+            class="d-flex w-100 justify-content-evenly navbar-nav me-auto mb-2 mb-lg-0"
+          >
+            <li class="nav-item">
+              <a class="nav-link text-white" aria-current="page" href="#"
+                >Become a Seller</a
+              >
+            </li>
+
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle text-white"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                More
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#"
+                ><i class="fa-solid fa-cart-shopping"></i>Cart</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="dropDownsContainer d-flex">
+      <div class="dropdown">
+        <button
+          class="btn dropdown-toggle"
+          type="button"
+          data-bs-toggle="dropdown"
+          aria-expanded="false"
+        >
+          Electronics
+        </button>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="#">Action</a></li>
+          <li><a class="dropdown-item" href="#">Another action</a></li>
+          <li><a class="dropdown-item" href="#">Something else here</a></li>
+        </ul>
+      </div>
+      <div class="dropdown">
+        <button
+          class="btn dropdown-toggle"
+          type="button"
+          data-bs-toggle="dropdown"
+          aria-expanded="false"
+        >
+          Dropdown button
+        </button>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="#">Action</a></li>
+          <li><a class="dropdown-item" href="#">Another action</a></li>
+          <li><a class="dropdown-item" href="#">Something else here</a></li>
+        </ul>
+      </div>
+      <div class="dropdown">
+        <button
+          class="btn dropdown-toggle"
+          type="button"
+          data-bs-toggle="dropdown"
+          aria-expanded="false"
+        >
+          Dropdown button
+        </button>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="#">Action</a></li>
+          <li><a class="dropdown-item" href="#">Another action</a></li>
+          <li><a class="dropdown-item" href="#">Something else here</a></li>
+        </ul>
+      </div>
+      <div class="dropdown">
+        <button
+          class="btn dropdown-toggle"
+          type="button"
+          data-bs-toggle="dropdown"
+          aria-expanded="false"
+        >
+          Dropdown button
+        </button>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="#">Action</a></li>
+          <li><a class="dropdown-item" href="#">Another action</a></li>
+          <li><a class="dropdown-item" href="#">Something else here</a></li>
+        </ul>
+      </div>
+      <div class="dropdown">
+        <button
+          class="btn dropdown-toggle"
+          type="button"
+          data-bs-toggle="dropdown"
+          aria-expanded="false"
+        >
+          Dropdown button
+        </button>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="#">Action</a></li>
+          <li><a class="dropdown-item" href="#">Another action</a></li>
+          <li><a class="dropdown-item" href="#">Something else here</a></li>
+        </ul>
+      </div>
+      <div class="dropdown">
+        <button
+          class="btn dropdown-toggle"
+          type="button"
+          data-bs-toggle="dropdown"
+          aria-expanded="false"
+        >
+          Dropdown button
+        </button>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="#">Action</a></li>
+          <li><a class="dropdown-item" href="#">Another action</a></li>
+          <li><a class="dropdown-item" href="#">Something else here</a></li>
+        </ul>
+      </div>
+      <div class="dropdown">
+        <button
+          class="btn dropdown-toggle"
+          type="button"
+          data-bs-toggle="dropdown"
+          aria-expanded="false"
+        >
+          Dropdown button
+        </button>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="#">Action</a></li>
+          <li><a class="dropdown-item" href="#">Another action</a></li>
+          <li><a class="dropdown-item" href="#">Something else here</a></li>
+        </ul>
+      </div>
+    </div>
+    <!--  -->
+
+    <!--2. Middle-content -section -wrapper -->
+    <div class="container-fluid MiddleContent-Wrapper d-flex">
+      <!-- 2.1 sidebar -->
+      <div class="sideBarcontainer">
+        <!-- Accordion -->
+        <div class="accordion" id="accordionExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header" style="width: 12rem">
+              <button
+                class="accordion-button"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseOne"
+                aria-expanded="true"
+                aria-controls="collapseOne"
+              >
+                Brand
+              </button>
+            </h2>
+            <div
+              id="collapseOne"
+              class="accordion-collapse collapse show"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body">
+                <div><input type="checkbox" /> <label for="">NION</label></div>
+                <div>
+                  <input type="checkbox" /> <label for="">Leader</label>
+                </div>
+                <div>
+                  <input type="checkbox" /> <label for="">Hero Electro</label>
+                </div>
+                <div><input type="checkbox" /> <label for="">Nuze</label></div>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" style="width: 12rem">
+              <button
+                class="accordion-button"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseTwo"
+                aria-expanded="true"
+                aria-controls="collapseTwo"
+              >
+                Customer Rating
+              </button>
+            </h2>
+            <div
+              id="collapseTwo"
+              class="accordion-collapse collapse show"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body">
+                <div>
+                  <input type="checkbox" />
+                  <label for=""
+                    >4
+                    <i
+                      class="fa-solid fa-star"
+                      style="font-size: 10px; line-height: 1"
+                    ></i
+                    >&above</label
+                  >
+                </div>
+                <div>
+                  <input type="checkbox" />
+                  <label for=""
+                    >3
+                    <i
+                      class="fa-solid fa-star"
+                      style="font-size: 10px; line-height: 1"
+                    ></i
+                    >&above</label
+                  >
+                </div>
+                <div>
+                  <input type="checkbox" />
+                  <label for=""
+                    >2
+                    <i
+                      class="fa-solid fa-star"
+                      style="font-size: 10px; line-height: 1"
+                    ></i
+                    >&above</label
+                  >
+                </div>
+                <div>
+                  <input type="checkbox" />
+                  <label for=""
+                    >1
+                    <i
+                      class="fa-solid fa-star"
+                      style="font-size: 10px; line-height: 1"
+                    ></i
+                    >&above</label
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" style="width: 12rem">
+              <button
+                class="accordion-button"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseThree"
+                aria-expanded="true"
+                aria-controls="collapseThree"
+              >
+                Customer Rating
+              </button>
+            </h2>
+            <div
+              id="collapseThree"
+              class="accordion-collapse collapse show"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body">
+                <div>
+                  <input type="checkbox" />
+                  <label for=""
+                    >4
+                    <i
+                      class="fa-solid fa-star"
+                      style="font-size: 10px; line-height: 1"
+                    ></i
+                    >&above</label
+                  >
+                </div>
+                <div>
+                  <input type="checkbox" />
+                  <label for=""
+                    >3
+                    <i
+                      class="fa-solid fa-star"
+                      style="font-size: 10px; line-height: 1"
+                    ></i
+                    >&above</label
+                  >
+                </div>
+                <div>
+                  <input type="checkbox" />
+                  <label for=""
+                    >2
+                    <i
+                      class="fa-solid fa-star"
+                      style="font-size: 10px; line-height: 1"
+                    ></i
+                    >&above</label
+                  >
+                </div>
+                <div>
+                  <input type="checkbox" />
+                  <label for=""
+                    >1
+                    <i
+                      class="fa-solid fa-star"
+                      style="font-size: 10px; line-height: 1"
+                    ></i
+                    >&above</label
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--  -->
+      </div>
+      <!--  -->
+
+      <!-- 2.2 main-content -->
+      <div class="MainContainer container">
+        <!-- breadcrumb -->
+        <nav style="--bs-breadcrumb-divider: '>'" aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="#">Home</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Library</li>
+          </ol>
+        </nav>
+        <!-- para -->
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+          Reprehenderit placeat, obcaecati impedit officiis nam modi at alias
+          quo cupiditate? Qui dignissimos debitis unde nisi commodi. Unde
+          similique, expedita ut reprehenderit neque quo officia sed, vel magni
+          corporis nam. Recusandae maiores fugiat consequuntur officiis facere
+          quod nemo saepe deleniti harum obcaecati quidem perspiciatis soluta
+          blanditiis dignissimos sapiente debitis tenetur nesciunt, fugit unde?
+          Ex ipsam asperiores nisi reprehenderit, tempore odio ipsum dolorum
+          necessitatibus accusamus porro exercitationem aliquam molestiae
+          voluptas, quos sequi nihil dicta recusandae voluptatum ullam iusto
+          facere possimus natus veniam. Velit veniam quas, quod illum quis vero
+          esse adipisci tempora hic?
+        </p>
+        <!-- btns-section -->
+        <div
+          class="btn-group btn-group-sm"
+          role="group"
+          aria-label="Small button group"
+        >
+          <button type="button" class="btn btn-outline-primary">Left</button>
+          <button type="button" class="btn btn-outline-primary">
+            <a href="./LowToHigh.html">Low To High</a>
+          </button>
+          <button type="button" class="btn btn-outline-primary">Right</button>
+        </div>
+        <!-- Cards-section -->
+        <div class="Cards-Container container">
+          <div class="row g-0">
+            <div class="col-3">
+              <div class="card" style="width: 18rem">
+                <img
+                  src="https://rukminim2.flixcart.com/image/612/612/xif0q/electric-cycle/g/m/h/-original-imagrzvg7gzhzyqj.jpeg?q=70"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.
+                  </p>
+                  <a href="" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-3">
+              <div class="card" style="width: 18rem">
+                <img
+                  src="https://rukminim2.flixcart.com/image/612/612/l58iaa80/electric-cycle/i/y/f/-original-imagfykthgudy4qz.jpeg?q=70"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.
+                  </p>
+                  <a href="" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-3">
+              <div class="card" style="width: 18rem">
+                <img
+                  src="https://rukminim2.flixcart.com/image/612/612/l58iaa80/electric-cycle/i/y/f/-original-imagfykthgudy4qz.jpeg?q=70"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.
+                  </p>
+                  <a href="" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-3">
+              <div class="card" style="width: 18rem">
+                <img
+                  src="https://rukminim2.flixcart.com/image/612/612/l58iaa80/electric-cycle/i/y/f/-original-imagfykthgudy4qz.jpeg?q=70"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.
+                  </p>
+                  <a href="" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-3">
+              <div class="card" style="width: 18rem">
+                <img
+                  src="https://rukminim2.flixcart.com/image/612/612/l58iaa80/electric-cycle/i/y/f/-original-imagfykthgudy4qz.jpeg?q=70"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.
+                  </p>
+                  <a href="" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-3">
+              <div class="card" style="width: 18rem">
+                <img
+                  src="https://rukminim2.flixcart.com/image/612/612/l58iaa80/electric-cycle/i/y/f/-original-imagfykthgudy4qz.jpeg?q=70"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.
+                  </p>
+                  <a href="" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-3">
+              <div class="card" style="width: 18rem">
+                <img
+                  src="https://rukminim2.flixcart.com/image/612/612/l58iaa80/electric-cycle/i/y/f/-original-imagfykthgudy4qz.jpeg?q=70"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.
+                  </p>
+                  <a href="" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-3">
+              <div class="card" style="width: 18rem">
+                <img
+                  src="https://rukminim2.flixcart.com/image/612/612/l58iaa80/electric-cycle/i/y/f/-original-imagfykthgudy4qz.jpeg?q=70"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.
+                  </p>
+                  <a href="" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row g-0">
+            <div class="col-3">
+              <div class="card" style="width: 18rem">
+                <img
+                  src="https://rukminim2.flixcart.com/image/612/612/l58iaa80/electric-cycle/i/y/f/-original-imagfykthgudy4qz.jpeg?q=70"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.
+                  </p>
+                  <a href="" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-3">
+              <div class="card" style="width: 18rem">
+                <img
+                  src="https://rukminim2.flixcart.com/image/612/612/l58iaa80/electric-cycle/i/y/f/-original-imagfykthgudy4qz.jpeg?q=70"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.
+                  </p>
+                  <a href="" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-3">
+              <div class="card" style="width: 18rem">
+                <img
+                  src="https://rukminim2.flixcart.com/image/612/612/l58iaa80/electric-cycle/i/y/f/-original-imagfykthgudy4qz.jpeg?q=70"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.
+                  </p>
+                  <a href="" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-3">
+              <div class="card" style="width: 18rem">
+                <img
+                  src="https://rukminim2.flixcart.com/image/612/612/l58iaa80/electric-cycle/i/y/f/-original-imagfykthgudy4qz.jpeg?q=70"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.
+                  </p>
+                  <a href="" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-3">
+              <div class="card" style="width: 18rem">
+                <img
+                  src="https://rukminim2.flixcart.com/image/612/612/l58iaa80/electric-cycle/i/y/f/-original-imagfykthgudy4qz.jpeg?q=70"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.
+                  </p>
+                  <a href="" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-3">
+              <div class="card" style="width: 18rem">
+                <img
+                  src="https://rukminim2.flixcart.com/image/612/612/l58iaa80/electric-cycle/i/y/f/-original-imagfykthgudy4qz.jpeg?q=70"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.
+                  </p>
+                  <a href="" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-3">
+              <div class="card" style="width: 18rem">
+                <img
+                  src="https://rukminim2.flixcart.com/image/612/612/l58iaa80/electric-cycle/i/y/f/-original-imagfykthgudy4qz.jpeg?q=70"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.
+                  </p>
+                  <a href="" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-3">
+              <div class="card" style="width: 18rem">
+                <img
+                  src="https://rukminim2.flixcart.com/image/612/612/l58iaa80/electric-cycle/i/y/f/-original-imagfykthgudy4qz.jpeg?q=70"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.
+                  </p>
+                  <a href="" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--  -->
+    </div>
+    <!--  -->
+
+    <!--3 Footer -->
+    <!--  -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
