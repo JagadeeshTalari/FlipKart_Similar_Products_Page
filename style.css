@@ -1,0 +1,12 @@
+.menuContainer {
+  position: relative;
+  width: 1px;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+.dropdown:hover .LinkText {
+  color: blue;
+}
